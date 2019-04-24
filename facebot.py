@@ -36,7 +36,7 @@ class Bot(Client):
             message_object.text = "Get on up outta here with those bits!"
             self.send(message_object, thread_id=thread_id, thread_type=thread_type)
 
-if __name__="__main__":
+if __name__=="__main__":
     client = Bot(Config.email, Config.pw)
     client.listen()    
     client.logout()
